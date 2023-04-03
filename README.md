@@ -18,5 +18,12 @@ curl --request POST \
 curl --request POST \
   --url http://localhost:8088/execute \
   --header 'content-type: application/json' \
+  --data '{"command": "curl http://localhost:8088"}'
+```
+
+```bash
+curl --request POST \
+  --url http://localhost:8088/execute \
+  --header 'content-type: application/json' \
   --data '{"command": "cat xyz.txt"}'
 ```
